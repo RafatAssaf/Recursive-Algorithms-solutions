@@ -1,9 +1,9 @@
 
 ///////////////////// Problem 1
 
-var countVowels = function('str'){
-  if(str.length = 0) { return 0 }
-  return (/(i|e|o|y|a)/g.test(str[0])? 1: 0) + countVowels(str.slice(1));
+var countVowels = function(str){
+  if(str.length === 0) { return 0 }
+  return (/(i|e|o|y|a)/g.test(str.toLowerCase()[0])? 1: 0) + countVowels(str.slice(1));
 }
 
 ///////////////////// Problem 2
