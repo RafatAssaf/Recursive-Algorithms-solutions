@@ -10,7 +10,7 @@ var countVowels = function(str){
 
 var recursiveSum = function(num){
   if(num === 0) { return 0 }
-  return num % 10 | 0 + recursiveSum(num / 10 | 0);
+  return (num % 10 | 0) + recursiveSum(num / 10 | 0);
 }
 
 ///////////////////// Problem 3
